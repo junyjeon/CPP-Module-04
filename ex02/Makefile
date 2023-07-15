@@ -6,7 +6,7 @@ CXXFLAGS	+=	-fsanitize=address -g2
 
 BUILD_DIR	=	bulid
 
-SRC		=	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+SRC		=	main.cpp AAnimal.cpp Brain.cpp Dog.cpp Cat.cpp
 OBJ		=	$(patsubst %.cpp, $(BUILD_DIR)/%.o, $(SRC))
 
 all:	$(NAME)
