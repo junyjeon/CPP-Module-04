@@ -2,7 +2,7 @@ NAME		=	Animal
 
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
-CXXFLAGS	+=	-fsanitize=address -g2
+# CXXFLAGS	+=	-fsanitize=address -g2
 
 BUILD_DIR	=	bulid
 

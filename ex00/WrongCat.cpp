@@ -26,10 +26,6 @@ void WrongCat::makeSound() const {
 	std::cout << "Meow!" << std::endl;
 }
 
-std::string WrongCat::getType() const {
-	return type;
-}
-
 WrongCat::~WrongCat() {
 	std::cout << "WrongCat Destructor called" << std::endl;
 }

@@ -4,13 +4,13 @@
 #include <iostream>
 
 class Brain {
-protected:
+private:
 	std::string ideas[100];
 public:
 	Brain();
 	Brain(const Brain &);
 	Brain &operator=(const Brain &);
-	virtual ~Brain();
+	~Brain();
 };
 
 

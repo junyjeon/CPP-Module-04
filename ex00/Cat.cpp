@@ -16,18 +16,13 @@ Cat::Cat(const Cat &other) {
 }
 
 Cat &Cat::operator=(const Cat &other) {
-	if (this == &other)
-		return *this;
-	type = other.getType();
+	if (this != &other)
+		type = other.getType();
 	return *this;
 }
 
 void Cat::makeSound() const {
 	std::cout << "Meow!" << std::endl;
-}
-
-std::string Cat::getType() const {
-	return type;
 }
 
 Cat::~Cat() {

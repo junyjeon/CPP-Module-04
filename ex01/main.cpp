@@ -13,12 +13,15 @@ int main()
 	std::cout << std::endl;
 	for (int i = 0; i < 4; i++)
 		delete arr[i];
+	std::cout << std::endl;
 
-	// const Animal* j = new Dog();
-	// const Animal* i = new Cat();
+	Dog a;
+	Dog b(a);
+	std::cout << std::endl;
 
-	// delete j;//should not create a leak	
-	// delete i;
-
+	std::cout << &a << std::endl;
+	std::cout << &b << std::endl;
+	std::cout << std::endl;
+	system("leaks Animal");
 	return 0;
 }

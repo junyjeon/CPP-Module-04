@@ -16,18 +16,13 @@ Dog::Dog(const Dog &other) {
 }
 
 Dog &Dog::operator=(const Dog &other) {
-	if (this == &other)
-		return *this;
-	type = other.getType();
+	if (this != &other)
+		type = other.getType();
 	return *this;
 }
 
 void Dog::makeSound() const {
 	std::cout << "Wof Wof!" << std::endl;
-}
-
-std::string Dog::getType() const {
-	return type;
 }
 
 Dog::~Dog() {

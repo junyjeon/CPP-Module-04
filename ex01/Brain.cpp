@@ -10,10 +10,9 @@ Brain::Brain(const Brain &other) {
 };
 
 Brain &Brain::operator=(const Brain &other) {
-	if (this == &other)
-		return *this;
-	for (int i = 0; i < 100; i++)
-		ideas[i] = other.ideas[i];
+	if (this != &other)
+		for (int i = 0; i < 100; i++)
+			ideas[i] = other.ideas[i];
 	return *this;
 };
 

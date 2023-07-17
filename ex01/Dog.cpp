@@ -13,22 +13,22 @@ Dog::Dog(std::string type) {
 
 Dog::Dog(const Dog &other) {
 	std::cout << "Dog Copy Constructor called" << std::endl;
-	*this = other;
+	type = other.type;
+	brain = new Brain(*other.brain);
 }
 
 Dog &Dog::operator=(const Dog &other) {
-	if (this == &other)
-		return *this;
-	type = other.getType();
+	if (this != &other)
+	{
+		delete brain;
+		type = other.type;
+		brain = new Brain(*other.brain);
+	}
 	return *this;
 }
 
 void Dog::makeSound() const {
 	std::cout << "Wof Wof!" << std::endl;
-}
-
-std::string Dog::getType() const {
-	return type;
 }
 
 Dog::~Dog() {

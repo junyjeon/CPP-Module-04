@@ -14,7 +14,6 @@ public:
 	Dog &operator=(const Dog &);
 	~Dog();
 	void makeSound() const;
-	std::string getType() const;
 };
 
 #endif

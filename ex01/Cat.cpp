@@ -14,21 +14,21 @@ Cat::Cat(std::string type) {
 Cat::Cat(const Cat &other) {
 	std::cout << "Cat Copy Constructor called" << std::endl;
 	*this = other;
+	brain = new Brain(*other.brain);
 }
 
 Cat &Cat::operator=(const Cat &other) {
-	if (this == &other)
-		return *this;
-	type = other.getType();
+	if (this != &other)
+	{
+		delete brain;
+		type = other.type;
+		brain = new Brain(*other.brain);
+	}
 	return *this;
 }
 
 void Cat::makeSound() const {
 	std::cout << "Meow!" << std::endl;
-}
-
-std::string Cat::getType() const {
-	return type;
 }
 
 Cat::~Cat() {
