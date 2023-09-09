@@ -1,18 +1,18 @@
-NAME		=	Animal
+NAME		=	AMateria
 
-CXX			=	c++
+CXX			=	c++ -g2
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
-CXXFLAGS	+=	-fsanitize=address -g2
+# CXXFLAGS	+=	-fsanitize=address -g2
 
 BUILD_DIR	=	bulid
 
-SRC		=	main.cpp AAnimal.cpp Brain.cpp Dog.cpp Cat.cpp
+SRC		=	main.cpp AMateria.cpp Ice.cpp Cure.cpp MateriaSource.cpp Character.cpp
 OBJ		=	$(patsubst %.cpp, $(BUILD_DIR)/%.o, $(SRC))
 
 all:	$(NAME)
 
 $(NAME): $(OBJ)
-	@$(CXX) $(CXXFLAGS) -I. -o $@ $^
+	$(CXX) $(CXXFLAGS) -I. -o $@ $^
 	@echo "$(GREEN)SUCCESS!$(END)"
 
 $(BUILD_DIR)/%.o: %.cpp | $(BUILD_DIR)
@@ -26,7 +26,7 @@ clean:
 
 fclean: clean
 	@$(RM) -r $(NAME)
-	@echo "${YELLOW}> Cleaning of the Animal has been done.❌${END}"
+	@echo "${YELLOW}> Cleaning of the AMateria has been done.❌${END}"
 
 re: fclean all
 
