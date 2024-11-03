@@ -3,19 +3,21 @@
 <div align="center">
   <img src="assets/16_cpp_module_04_review.jpg" alt="CPP Module 04 Review" width="800"/>
   
-  [![42 Score](https://img.shields.io/badge/Score-100%2F100-success?style=for-the-badge&logo=42)](https://github.com/your-username/CPP-Module-04)
+  [![42 Score](https://img.shields.io/badge/Score-100%2F100-success?style=for-the-badge&logo=42)](https://github.com/junyjeon/CPP-Module-04)
+  [![C++](https://img.shields.io/badge/C++-98-blue.svg?style=for-the-badge&logo=c%2B%2B)](https://github.com/junyjeon/CPP-Module-04)
 </div>
 
-## Table of Contents
-- [About](#about) 🎯
-- [Project Setup](#project-setup) 🛠
-- [Core Concepts](#core-concepts) 💡
-- [Implementation Guide](#implementation-guide) 📝
-- [Memory Management](#memory-management) 🔧
-- [Debug & Test](#debug--test) 🔍
-- [Evaluation Guide](#evaluation-guide) ✅
+## 목차
+- [개요](#개요) 🎯
+- [프로젝트 설정](#프로젝트-설정) 🛠
+- [핵심 개념](#핵심-개념) 💡
+- [구현 가이드](#구현-가이드) 📝
+- [메모리 관리](#메모리-관리) 🔧
+- [디버그 & 테스트](#디버그--테스트) 🔍
+- [평가 가이드](#평가-가이드) ✅
+- [참고 자료](#참고-자료) 📚
 
-### 🎯 About
+### 🎯 개요
 
 이 모듈은 C++의 다형성과 추상 클래스를 다루는 프로젝트입니다.
 
@@ -27,7 +29,7 @@
 ✓ 추상 클래스와 인터페이스 설계
 ```
 
-### 🛠 Project Setup
+### 🛠 프로젝트 설정
 
 #### 1. 파일 구조
 ```bash
@@ -73,7 +75,7 @@ re: fclean all
 .PHONY: all clean fclean re
 ```
 
-### 💡 Core Concepts
+### 💡 핵심 개념
 
 #### 1. 추상 클래스 설계
 ```cpp
@@ -176,7 +178,7 @@ public:
 };
 ```
 
-### 🔧 Memory Management
+### 🔧 메모리 관리
 
 #### 1. RAII 패턴 적용
 ```cpp
@@ -277,7 +279,7 @@ void Character::unequip(int idx) {
 }
 ```
 
-### 🔍 Debug & Test
+### 🔍 디버그 & 테스트
 
 #### 1. 메모리 테스트
 ```cpp
@@ -359,7 +361,7 @@ void testErrorCases(void) {
 }
 ```
 
-### ✅ Evaluation Guide
+### ✅ 평가 가이드
 
 #### 1. 평가 준비 체크리스트
 ```cpp
@@ -436,7 +438,7 @@ Character::~Character() {
 - 복사 생성/대입시 예외 처리
 ```
 
-### 📚 Reference
+### 📚 참고 자료
 - [C++ Orthodox Canonical Form](https://isocpp.org/wiki/faq/virtual-functions#virtual-dtors)
 - [RAII and Exception Safety](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management)
 - [Valgrind Quick Start](https://valgrind.org/docs/manual/quick-start.html)
