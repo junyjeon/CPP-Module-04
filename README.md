@@ -1,10 +1,20 @@
-# CPP Module 04
-
 <div align="center">
+  <h1>💻 CPP Module 04</h1>
+  <p>다형성과 추상 클래스 | 인터페이스 설계</p>
+
   <img src="assets/16_cpp_module_04_review.jpg" alt="CPP Module 04 Review" width="800"/>
   
-  [![42 Score](https://img.shields.io/badge/Score-100%2F100-success?style=for-the-badge&logo=42)](https://github.com/junyjeon/CPP-Module-04)
-  [![C++](https://img.shields.io/badge/C++-98-blue.svg?style=for-the-badge&logo=c%2B%2B)](https://github.com/junyjeon/CPP-Module-04)
+  <div>
+    <img src="https://img.shields.io/badge/Score-100%2F100-success?style=flat-square&logo=42" alt="42 Score"/>
+    <img src="https://img.shields.io/badge/Language-C++98-00599C?style=flat-square&logo=c%2B%2B" alt="Language"/>
+  </div>
+
+  ### 학습 내용
+  - 추상 클래스와 순수 가상 함수
+  - 인터페이스 설계 패턴
+  - 런타임 다형성 구현
+  - 가상 소멸자의 필요성
+  - 깊은 복사와 얕은 복사
 </div>
 
 ## 목차
